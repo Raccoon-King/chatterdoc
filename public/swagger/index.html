@@ -1,0 +1,47 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>BanditBox - AnythingLLM API Docs</title>
+    <link rel="stylesheet" href="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui.css" />
+    <style>
+      body {
+        background-color: #24425D;
+      }
+      .swagger-ui .topbar {
+        background-color: #345A7D;
+      }
+      .swagger-ui .topbar .download-url-wrapper .select-label,
+      .swagger-ui .topbar .download-url-wrapper button {
+        background-color: #FBC93E;
+        color: #24425D;
+        border-color: #FBC93E;
+      }
+       .swagger-ui .topbar .download-url-wrapper input[type=text] {
+        border: 2px solid #4A7C9B;
+        background-color: #24425D;
+        color: white;
+      }
+    </style>
+</head>
+<body>
+<div id="swagger-ui"></div>
+<script src="https://unpkg.com/swagger-ui-dist@5.11.0/swagger-ui-bundle.js" crossorigin></script>
+<script>
+    window.onload = () => {
+        window.ui = SwaggerUIBundle({
+            url: '/swagger/swagger.json',
+            dom_id: '#swagger-ui',
+            deepLinking: true,
+            presets: [
+              SwaggerUIBundle.presets.apis,
+              SwaggerUIBundle.SwaggerUIStandalonePreset
+            ],
+            layout: "StandaloneLayout",
+        });
+    };
+</script>
+</body>
+</html>

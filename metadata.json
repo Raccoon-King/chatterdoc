@@ -1,0 +1,5 @@
+{
+  "name": "BanditBox",
+  "description": "An application to tag and organize files using an AI assistant named Grabby, and integrate with AnythingLLM workspaces.",
+  "requestFramePermissions": []
+}
